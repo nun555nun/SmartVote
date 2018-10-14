@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="236dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="สำนักงานคณะกรรมการเลือกตั้ง"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ELECTION COMMISSION OF THAILAND"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/count_down_to_election_day"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_day"
+        android:gravity="center"
+        android:text="365"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_hour"
+        android:gravity="center"
+        android:text="24"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView19"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_minute"
+        android:gravity="center"
+        android:text="60"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView20"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_second"
+        android:gravity="center"
+        android:text="60"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/days"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/hours"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/minutes"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/seconds"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+</android.support.constraint.ConstraintLayout>
